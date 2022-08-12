@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국립중앙도서관</title>
+  <link rel="shortcut icon" type="image/ico" href="./nationalLibrary/images/favicon.png">
+  <link rel="stylesheet" href="./nationalLibrary/css/style.css">
+  <link rel="stylesheet" href="./nationalLibrary/css/response.css">
+  <script src="./script/lib/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+  <!-- 스킵 메뉴 -->
+  <ul id="skip">
+    <li><a href="#nav">메뉴 바로가기</a></li>
+    <li><a href="#mainSearch">검색 바로가기</a></li>
+  </ul>
+
+  <div id="wrap">
+
+    <!-- 팝업 -->
+    <div id="popup">
+      <img src="./nationalLibrary/images/viewImage.png" alt="popup" class="pop-window">
+      <img src="./nationalLibrary/images/viewImage_mobile.png" alt="popup" class="pop-mobile">
+      <div class="popup-wrap">
+        <button class="pop-close-btn">닫기</button>
+        <span class="check-wrap">
+          <input type="checkbox" id="popCheckBox" class="pop-check-box">
+          <label for="popCheckBox">오늘 하루 보지 않기</label>
+        </span>
+      </div>
+    </div>
+
+    <header id="header">
+
+      <!-- 유틸 -->
+      <div class="utils-wrap">
+       <div class="container">
+        <div class="left"><a href="#none" title="사서지원서비스 바로가기">사서지원서비스</a><a href="#none" title="공공도서관지원서비스 바로가기">공공도서관지원서비스</a></div>
+        <ul>
+          <li class="item"><a href="#none" title="로그인">로그인</a></li>
+          <li class="item"><a href="#none" title="회원가입">회원가입</a></li>
+          <li class="item"><a href="#none" title="내서재">내서재</a></li>
+          <li class="item"><a href="#none" title="바구니">바구니</a></li>
+          <li class="item"><a href="#none" title="ENGLISH">ENGLISH</a></li>
+          <li class="header-search"><input type="text" id="keyword" name="header-search" placeholder="홈페이지 내 검색"><span><img src="./nationalLibrary/images/이미지01.png" alt="홈페이지 내 검색"></span></li>
+        </ul>
+       </div>
+      </div>
+
+      <!-- 로고 -->
+      <div class="inner-top">
+
+        <div class="mobile-btn-box">
+          <a href="#!" class="mobile-btn">
+            <span>
+              <i class="line line1"></i>
+              <i class="line line2"></i>
+              <i class="line line3"></i>
+            </span>
+          </a>
+        </div>
+
+        <h1 class="logo">
+        <div class="inner-top-left"><a href="./index.html"><img src="./nationalLibrary/images/이미지02.png" alt="문화체육관광부 국립중앙도서관"><span>문화체육관광부 국립중앙도서관</span></a></div>
+
+        <div class="inner-top-right">
+          <div class="library-info">
+            <div class="clock">
+              <div class="clock-hour"><i class="hour"></i></div>
+              <div class="clock-min"><i class="min"></i></div>
+            </div>
+            <div class="today">
+              <span class="month-date"></span>
+              <p class="open">운영시간 10:00 ~ 18:00</p>
+              <p class="closed">오늘은 휴관일 입니다.</p>
+            </div>
+          </div>
+        </div>
+        </h1>
+      </div>
+
+      <!-- 메뉴 -->
+      <div class="inner-bottom">
+        <div class="menu-bg"><div class="sub-menu-bg"></div></div>
+
+        <nav id="nav">
+          <div class="menu-wrap">
+            <ul class="menu-container">
+
+              <li><a href="#none" class="main-menu" title="자료검색"><h1>자료검색</h1></a>
+               <div class="sub sub1">
+                <ul>
+                  <li><a href="#none" title="소장자료">소장자료</a></li>
+                  <li><a href="#none" title="디지털화 자료">디지털화 자료</a></li>
+                  <li><a href="#none" title="Web DB">Web DB</a></li>
+                  <li><a href="#none" title="신착자료">신착자료</a></li>
+                  <li><a href="#none" title="사서추천도서">사서추천도서</a></li>
+                  <li><a href="#none" title="영상자료 목록">영상자료 목록</a></li>
+                  <li><a href="#none" title="국가자료종합목록">국가자료종합목록</a></li>
+                  <li><a href="#none" title="한국고문헌종합목록">한국고문헌종합목록</a></li>
+                  <li><a href="#none" title="국가전자도서관">국가전자도서관</a></li>
+                  <li><a href="#none" title="근대문학종합목록">근대문학종합목록</a></li>
+                  <li><a href="#none" title="국가서지 LOD">국가서지 LOD</a></li>
+                  <li><a href="#none" title="본문검색 시범서비스">본문검색 시범서비스</a></li>
+                </ul>
+               </div>
+              </li>
+              
+              <li><a href="#none" class="main-menu" title="디지털컬렉션"><h1>디지털컬렉션</h1></a>
+                <div class="sub sub2">
+                 <ul>
+                   <li><a href="#none" title="주제별컬렉션">주제별컬렉션</a></li>
+                   <li><a href="#none" title="대한민국 신문 아카이브">대한민국 신문 아카이브</a></li>
+                   <li><a href="#none" title="관보">관보</a></li>
+                   <li><a href="#none" title="해외 한국 관련 자료">해외 한국 관련 자료</a></li>
+                   <li><a href="#none" title="OAK국가리포지터리">OAK국가리포지터리</a></li>
+                   <li><a href="#none" title="오아시스(OASIS)">오아시스(OASIS)</a></li>
+                   <li><a href="#none" title="책 읽어주는 도서관">책 읽어주는 도서관</a></li>
+                   <li><a href="#none" title="세계의 도서관">세계의 도서관</a></li>
+                   <li><a href="#none" title="동아시아 디지털도서관(EADL)">동아시아 디지털도서관(EADL)</a></li>
+                   <li><a href="#none" title="코리안 메모리(시범페이지)">코리안 메모리(시범페이지)</a></li>
+                 </ul>
+                </div>
+               </li>
+
+               <li><a href="none" class="main-menu" title="신청·참여"><h1>신청·참여</h1></a>
+                <div class="sub sub3">
+                 <ul>
+                   <li><a href="#none" title="자료신청안내">자료신청안내</a></li>
+                   <li><a href="#none" title="비치희망도서">비치희망도서</a></li>
+                   <li><a href="#none" title="상호대차">상호대차</a></li>
+                   <li><a href="#none" title="책다모아(기증)">책다모아(기증)</a></li>
+                   <li><a href="#none" title="저작권 이용허락">저작권 이용허락</a></li>
+                   <li><a href="#none" title="사서에게 물어보세요">사서에게 물어보세요</a></li>
+                   <li><a href="#none" title="나의 책, 나의 인문기행">나의 책, 나의 인문기행</a></li>
+                   <li><a href="#none" title="연구정보서비스">연구정보서비스</a></li>
+                   <li><a href="#none" title="견학">견학</a></li>
+                   <li><a href="#none" title="예약">예약</a></li>
+                   <li><a href="#none" title="사회봉사">사회봉사</a></li>
+                   <li><a href="#none" title="교육/문화프로그램">교육/문화프로그램</a></li>
+                   <li><a href="#none" title="메일링서비스">메일링서비스</a></li>
+                   <li><a href="#none" title="연계 API">연계 API</a></li>
+                 </ul>
+                </div>
+               </li>
+
+               <li><a href="#none" class="main-menu" title="도서관 이용"><h1>도서관 이용</h1></a>
+                <div class="sub sub4">
+                 <ul>
+                   <li><a href="#none" title="집에서 이용하는 도서관">집에서 이용하는 도서관</a></li>
+                   <li><a href="#none" title="본관 이용시간 및 이용증 발급">본관 이용시간 및 이용증 발급</a></li>
+                   <li><a href="#none" title="본관 자료실 안내">본관 자료실 안내</a></li>
+                   <li><a href="#none" title="디지털도서관 안내">디지털도서관 안내</a></li>
+                   <li><a href="./calendar/index.html" title="도서관 일정">도서관 일정</a></li>
+                   <li><a href="#none" title="편의시설">편의시설</a></li>
+                   <li><a href="#none" title="자료복사">자료복사</a></li>
+                   <li><a href="#none" title="전시">전시</a></li>
+                   <li><a href="#none" title="자주하는 질문">자주하는 질문</a></li>
+                   <li><a href="#none" title="설문조사">설문조사</a></li>
+                   <li><a href="#none" title="오류신고">오류신고</a></li>
+                   <li><a href="#none" title="분실물찾기">분실물찾기</a></li>
+                 </ul>
+                </div>
+               </li>
+
+               <li><a href="#none" class="main-menu" title="도서관 소개"><h1>도서관 소개</h1></a>
+                <div class="sub sub5">
+                 <ul>
+                   <li><a href="#none" title="국립중앙도서관">국립중앙도서관</a></li>
+                   <li><a href="#none" title="소속도서관">소속도서관</a></li>
+                   <li><a href="#none" title="도서관 협력망">도서관 협력망</a></li>
+                   <li><a href="#none" title="도서관소식">도서관소식</a></li>
+                   <li><a href="#none" title="발간자료">발간자료</a></li>
+                   <li><a href="#none" title="정보공개">정보공개</a></li>
+                   <li><a href="#none" title="관내사이트 안내">관내사이트 안내</a></li>
+                 </ul>
+                </div>
+               </li>
+
+            </ul>
+
+          </div>
+        </nav>
+        
+      </div>
+      
+    </header>
+    
+    <main id="main">
+
+      <section id="section1">
+        <div id="mainSearch">
+          <div class="search-form-wrap">
+            <form name="searchForm" action="" class="searchForm">
+
+              <div class="search-contents">
+                <div class="input-txt-wrap">
+                  <input type="text" name="kwd" id="mainInputTxt" class="input-txt" placeholder="검색어를 입력해주세요."><label for="mainInputTxt"></label>
+                </div>
+
+                  <a href="#none" class="btn-arrow"><img src="./nationalLibrary/images/이미지03.png" alt="자동완성 열기"></a>
+
+                  <div class="worldword-wrap">
+                    <button class="worldword-btn"><img src="./nationalLibrary/images/이미지04-2.png" alt="다국어입력기"><span>다국어입력기</span></button>
+                  </div>
+              </div>
+
+                <div class="search-btn-wrap">
+                  <button class="search-btn"><span>검색</span></button>
+                
+                 <div class="details-btn-wrap">
+                  <button class="details-btn"><span>상세검색</span></button>
+                 </div>
+               </div>
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="section2">
+        <div class="main-wide">
+          <div class="shortcut-wrap">
+            <ul class="service-list">
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="자료 당일신청">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지06.png" alt="자료 당일신청"></span><span class="txt">자료 당일신청</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="도서관 방문 예약">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지08.png" alt="도서관 방문 예약"></span><span class="txt">도서관 방문 예약</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="디지털도서관 예약">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지10.png" alt="디지털도서관 예약"></span><span class="txt">디지털도서관 예약</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="온라인 견학">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지12.png" alt="온라인 견학"></span><span class="txt">온라인 견학</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="이용자 교육">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지14.png" alt="이용자 교육"></span><span class="txt">이용자 교육</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="편의시설">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지16.png" alt="편의시설"></span><span class="txt">편의시설</span>
+                </a>
+              </li>
+              <li class="service-item">
+                <a class="icon-link" href="#none" title="찾아오시는 길">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지18.png" alt="찾아오시는 길"></span><span class="txt">찾아오시는 길</span>
+                </a>
+              </li>
+              <li class="service-item service-item-set">
+                <a class="icon-link" href="#none" title="전체보기/설정">
+                  <span class="icon"><img src="./nationalLibrary/images/이미지21.png" alt="전체보기/설정"></span><span class="txt">전체보기/설정</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="covid">
+          <a href="#none" class="covid-gap">
+            <span>국립중앙도서관<p>실감서재 개관</p></span>
+            <span class="link">바로가기</span>
+          </a>
+        </div>
+        
+        
+      </section>
+
+      <section id="section3">
+        <div class="type-service-wrap">
+          <div class="service-header">
+            <h2>관내 사이트</h2>
+            <button id="toggleBtn" class="toggle-btn"></button>
+
+            <div class="more-btn">
+            <a href="#none" class="tabpanel1-more-btn" title="일반이용자 더보기"><img alt="일반이용자 더보기" src="./nationalLibrary/images/이미지24.png"></a>
+            <a href="#none" class="tabpanel2-more-btn" title="사서ㆍ연구자 더보기"><img alt="사서ㆍ연구자 더보기" src="./nationalLibrary/images/이미지24.png"></a>
+            <a href="#none" class="tabpanel3-more-btn" title="출판사 더보기"><img alt="출판사 더보기" src="./nationalLibrary/images/이미지24.png"></a>
+            </div>
+          </div>
+
+          <div class="type-service">
+            <ul class="type-list">
+              <li class="type-item type1"><a href="#none" title="일반이용자"><span>일반이용자</span></a></li>
+              <li class="type-item type2 off"><a href="#none" title="사서ㆍ연구자"><span>사서ㆍ연구자</span></a></li>
+              <li class="type-item type3 off"><a href="#none" title="출판사"><span>출판사</span></a></li>
+            </ul>
+
+            <div class="type-tabpanel-wrap">
+
+              <div id="tabpanel1">
+                <div class="type-service-list">
+                  <ul class="list1">
+                    <li><a href="#none" title="COVID-19 도서관 서비스"><p>COVID-19 도서관 서비스</p></a></li>
+                    <li><a href="#none" title="대한민국신문아카이브"><p>대한민국신문아카이브</p></a></li>
+                    <li><a href="#none" title="웹자원검색(OASIS)"><p>웹자원검색(OASIS)</p></a></li>
+                    <li><a href="#none" title="책이음"><p>책이음</p></a></li>
+                  </ul>
+                  <ul class="list2">
+                    <li><a href="#none" title="국가자료종합목록"><p>국가자료종합목록</p></a></li>
+                    <li><a href="#none" title="도서관 정보 나루"><p>도서관 정보 나루</p></a></li>
+                    <li><a href="#none" title="나의 책, 나의 인문기행"><p>나의 책, 나의 인문기행</p></a></li>
+                    <li><a href="#none" title="한국고문헌종합목록"><p>한국고문헌종합목록</p></a></li>
+                  </ul>
+                  <ul class="list3">
+                    <li><a href="#none" title="국가전자도서관"><p>국가전자도서관</p></a></li>
+                    <li><a href="#none" title="북한자료센터"><p>북한자료센터</p></a></li>
+                    <li><a href="#none" title="책바다(국가상호대차)"><p>책바다(국가상호대차)</p></a></li>
+                    <li><a href="#none" title="ISNI-KOREA"><p>ISNI-KOREA</p></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="tabpanel2">
+                <div class="type-service-list">
+                  <ul class="list1">
+                    <li><a href="#none" title="국가지식자원공유서비스 관리시스템"><p>국가지식자원공유서비스 관리시스템</p></a></li>
+                    <li><a href="#none" title="공공도서관지원서비스"><p>공공도서관지원서비스</p></a></li>
+                    <li><a href="#none" title="링크드오픈데이터 (LOD)"><p>링크드오픈데이터 (LOD)</p></a></li>
+                    <li><a href="#none" title="한국학사서 글로벌 네트워크"><p>한국학사서 글로벌 네트워크</p></a></li>
+                  </ul>
+                  <ul class="list2">
+                    <li><a href="#none" title="사서지원서비스"><p>사서지원서비스</p></a></li>
+                    <li><a href="#none" title="도서관 부호 신청"><p>도서관 부호 신청</p></a></li>
+                    <li><a href="#none" title="사서교육"><p>사서교육</p></a></li>
+                    <li><a href="#none" title="Open Access Korea 포털"><p>Open Access Korea 포털</p></a></li>
+                  </ul>
+                  <ul class="list3">
+                    <li><a href="#none" title="연구정보서비스"><p>연구정보서비스</p></a></li>
+                    <li><a href="#none" title="도서관 정보 나루"><p>도서관 정보 나루</p></a></li>
+                    <li><a href="#none" title="정책정보포털 POINT"><p>정책정보포털 POINT</p></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="tabpanel3">
+                <div class="type-service-list">
+                  <ul class="list1">
+                    <li><a href="#none" title="납본신청"><p>납본신청</p></a></li>
+                    <li><a href="#none" title="온라인자료 납본"><p>온라인자료 납본</p></a></li>
+                  </ul>
+                  <ul class="list2">
+                    <li><a href="#none" title="도서관 정보 나루"><p>도서관 정보 나루</p></a></li>
+                    <li><a href="#none" title="한국문헌번호센터 (ISBN/ISSN)"><p>한국문헌번호센터 (ISBN/ISSN)</p></a></li>
+                  </ul>
+                  <ul class="list3">
+                    <li><a href="#none" title="ISBN·ISSN·납본시스템"><p>ISBN·ISSN·납본시스템</p></a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <div id="mainSection4">
+          <div class="top">
+
+            <div class="main-bx library-wrap">
+              <strong class="title">
+                <h3>도서관 일정</h3>
+                <a href="./calendar/index.html" title="도서관 일정 더보기">
+                  <img src="./nationalLibrary/images/이미지26.png" alt="도서관 일정">
+                </a>
+              </strong>
+              <div class="library-container">
+
+                <div class="control-wrap">
+                  <a href="./calendar/index.html" class="month-btn">
+                    <strong class="month"></strong>
+                  </a>
+
+                  <div class="notify-wrap">
+                    <ul class="notify-list">
+                      <li class="notify-item closed">정기휴관</li>
+                      <li class="notify-item closed-temporary">임시휴관</li>
+                      <li class="notify-item educate">전시/교육</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="controller">
+                  <button class="controller-prev-btn"><img src="./nationalLibrary/images/arrow_prev.png" alt="이전"></button>
+                  <button class="controller-next-btn"><img src="./nationalLibrary/images/arrow_next.png" alt="다음"></button>
+                </div>
+                
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="sun"><span>일</span></th>
+                        <th scope="col" class="mon"><span>월</span></th>
+                        <th scope="col" class="tue"><span>화</span></th>
+                        <th scope="col" class="wed"><span>수</span></th>
+                        <th scope="col" class="thu"><span>목</span></th>
+                        <th scope="col" class="fri"><span>금</span></th>
+                        <th scope="col" class="sat"><span>토</span></th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="calendar">
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="main-bx participation-wrap">
+              <strong class="title">
+                <h3>신청·참여</h3>
+                <div class="count-wrap">
+                  <p class="choice slick-choice slick-choice1 on">1</p>
+                  <p class="choice slick-choice slick-choice2">2</p>
+                  <p class="choice slick-choice slick-choice3">3</p>
+                  <p class="choice slick-choice slick-choice4">4</p>
+                  <p class="choice slick-choice slick-choice5">5</p>
+                  <p class="choice slick-choice slick-choice6">6</p>
+                  <p class="choice slick-choice slick-choice7">7</p>
+                  <p class="choice slick-choice slick-choice8">8</p>
+                  <p class="total-count">8</p>
+                </div>
+              </strong>
+
+              <div class="participation-container">
+                <button class="slick-prev-btn"><img src="./nationalLibrary/images/이미지27.png" alt="이전"></button><button class="slick-next-btn"><img src="./nationalLibrary/images/이미지28.png" alt="다음"></button>
+                <div class="slick-list">
+                  <ul class="slick-track">
+                    <li class="slick slick6">
+                      <a href="#none">
+                        <span class="slick-tit">고문헌 무료 상담 서비스</span>
+                        <span class="slick-text">개인이 소장하고 있는 고문헌에 대한 궁금증은 국립중앙도서관이 해결해 드립니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick7">
+                      <a href="#none">
+                        <span class="slick-tit">국립중앙도서관 무료 영화상영</span>
+                        <span class="slick-text">매주 무료로 운영되는 영화관람에 참여하세요.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick8">
+                      <a href="#none">
+                        <span class="slick-tit">납본</span>
+                        <span class="slick-text">소중한 지적 문화 유산을 한 곳에 모아 새로운 가치를 만드는 일, 납본에서 시작됩니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick1">
+                      <a href="#none">
+                        <span class="slick-tit">국립중앙도서관 지식의 길</span>
+                        <span class="slick-text">지식의 길은 문학과 디지털기술을 접목한 실감 콘텐츠 체험 공간입니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick2">
+                      <a href="#none">
+                        <span class="slick-tit">사서에게 물어보세요</span>
+                        <span class="slick-text">일반인들이 궁금해하는 지식 및 학술정보에 대해 제공하는 학술정보 서비스</span>
+                      </a>
+                    </li>
+                    <li class="slick slick3">
+                      <a href="#none">
+                        <span class="slick-tit">연구정보서비스</span>
+                        <span class="slick-text">학술연구활동을 지원, 연구활동에 집중할 수 있도록 연구정보서비스를 운영하고 있습니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick4">
+                      <a href="#none">
+                        <span class="slick-tit">저작권 이용허락</span>
+                        <span class="slick-text">국립중앙도서관과 함께하는 지식나눔 실천의 첫걸음, 지금 시작하세요.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick5">
+                      <a href="#none">
+                        <span class="slick-tit">국립중앙도서관 1일 미디어 아카데미</span>
+                        <span class="slick-text">1인 미디어 크리에이터에 도전하세요. 국립중앙도서관이 여러분을 응원합니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick6">
+                      <a href="#none">
+                        <span class="slick-tit">고문헌 무료 상담 서비스</span>
+                        <span class="slick-text">개인이 소장하고 있는 고문헌에 대한 궁금증은 국립중앙도서관이 해결해 드립니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick7">
+                      <a href="#none">
+                        <span class="slick-tit">국립중앙도서관 무료 영화상영</span>
+                        <span class="slick-text">매주 무료로 운영되는 영화관람에 참여하세요.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick8">
+                      <a href="#none">
+                        <span class="slick-tit">납본</span>
+                        <span class="slick-text">소중한 지적 문화 유산을 한 곳에 모아 새로운 가치를 만드는 일, 납본에서 시작됩니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick1">
+                      <a href="#none">
+                        <span class="slick-tit">국립중앙도서관 지식의 길</span>
+                        <span class="slick-text">지식의 길은 문학과 디지털기술을 접목한 실감 콘텐츠 체험 공간입니다.</span>
+                      </a>
+                    </li>
+                    <li class="slick slick2">
+                      <a href="#none">
+                        <span class="slick-tit">사서에게 물어보세요</span>
+                        <span class="slick-text">일반인들이 궁금해하는 지식 및 학술정보에 대해 제공하는 학술정보 서비스</span>
+                      </a>
+                    </li>
+                    <li class="slick slick3">
+                      <a href="#none">
+                        <span class="slick-tit">연구정보서비스</span>
+                        <span class="slick-text">학술연구활동을 지원, 연구활동에 집중할 수 있도록 연구정보서비스를 운영하고 있습니다.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom">
+
+            <div class="main-bx inform-wrap">
+              <strong class="title">
+                <h3>소식알림</h3>
+                <div class="count-wrap">
+                  <p class="choice inform-choice on">1</p>
+                  <p class="choice inform-choice">2</p>
+                  <p class="choice inform-choice">3</p>
+                  <p class="choice inform-choice">4</p>
+                  <p class="choice inform-choice">5</p>
+                  <p class="choice inform-choice">6</p>
+                  <p class="choice inform-choice">7</p>
+                  <p class="choice inform-choice">8</p>
+                  <p class="total-count">8</p>
+                </div>
+              </strong>
+
+              <div class="inform-container">
+
+                <div class="viewport">
+                  <div class="page-btn-box">
+                    <div class="btn-item on"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                    <div class="btn-item"><a href="#none"></a></div>
+                  </div>
+                  <div class="viewport-toggle-btn">
+                    <div class="viewport-stop-btn"><img src="./nationalLibrary/images/이미지39.png" alt="일시정지"></div>
+                    <div class="viewport-start-btn"><img src="./nationalLibrary/images/이미지38.png" alt="재생"></div>
+                  </div>
+                </div>
+                
+                <div class="inform-view">
+                  <ul class="inform-wrap">
+                    <li class="inform inform8"><a href="#none"></a></li>
+                    <li class="inform inform1"><a href="#none"></a></li>
+                    <li class="inform inform2"><a href="#none"></a></li>
+                    <li class="inform inform3"><a href="#none"></a></li>
+                    <li class="inform inform4"><a href="#none"></a></li>
+                    <li class="inform inform5"><a href="#none"></a></li>
+                    <li class="inform inform6"><a href="#none"></a></li>
+                    <li class="inform inform7"><a href="#none"></a></li>
+                    <li class="inform inform8"><a href="#none"></a></li>
+                    <li class="inform inform1"><a href="#none"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-bx collection-wrap">
+              <strong class="title">
+                <h3>주제별컬렉션</h3>
+                <a href="#none" title="주제별컬렉션 더보기">
+                  <img src="./nationalLibrary/images/이미지26.png" alt="주제별컬렉션 더보기">
+                </a>
+              </strong>
+
+              <div class="collection-container">
+                <button class="swipe-prev-btn"><img src="./nationalLibrary/images/이미지27.png" alt="이전"></button><button class="swipe-next-btn"><img src="./nationalLibrary/images/이미지28.png" alt="다음"></button>
+                <ul class="collection-swipe">
+                  <il class="swipe swipe2"><a href="#none"><img src="./nationalLibrary/images/이미지41.png" alt="slide"></a></il>
+                  <il class="swipe swipe3"><a href="#none"><img src="./nationalLibrary/images/이미지42.png" alt="slide"></a></il>
+                  <il class="swipe swipe4"><a href="#none"><img src="./nationalLibrary/images/이미지43.png" alt="slide"></a></il>
+                  <il class="swipe swipe1"><a href="#none"><img src="./nationalLibrary/images/이미지40.png" alt="slide"></a></il>
+                  <il class="swipe swipe2"><a href="#none"><img src="./nationalLibrary/images/이미지41.png" alt="slide"></a></il>
+                  <il class="swipe swipe3"><a href="#none"><img src="./nationalLibrary/images/이미지42.png" alt="slide"></a></il>
+                  <il class="swipe swipe4"><a href="#none"><img src="./nationalLibrary/images/이미지43.png" alt="slide"></a></il>
+                  <il class="swipe swipe1"><a href="#none"><img src="./nationalLibrary/images/이미지40.png" alt="slide"></a></il>
+                  <il class="swipe swipe2"><a href="#none"><img src="./nationalLibrary/images/이미지41.png" alt="slide"></a></il>
+                  <il class="swipe swipe3"><a href="#none"><img src="./nationalLibrary/images/이미지42.png" alt="slide"></a></il>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+      <section id="section5">
+        <div id="mainBook">
+          <div class="book-menu-wrap">
+            <ul class="book-list">
+              <li class="book-item book-recommend on"><a href="#none" title="사서추천도서">사서추천도서</a></li>
+              <li class="book-item book-new"><a href="#none" title="신착자료">신착자료</a></li>
+              <li class="book-item book-read"><a href="#none" title="책 읽어주는 도서관">책 읽어주는 도서관</a></li>
+              <li class="book-item book-webdb"><a href="#none" title="WEB DB">WEB DB</a></li>
+            </ul>
+          </div>
+
+          <div class="book-contents-wrap">
+            <div id="bookRecommend" class="book-contents">
+              <ul class="contents-list">
+                <li class="content-item">
+                  <a href="#none" title="밀레니얼은 어떻게 배우고 성장하는가">
+                    <span class="img-area img-area1">
+                      <i class="mouseover-img mouseover1"><img src="./nationalLibrary/images/01.png" alt="mouseover-img"><em>밀레니얼은 어떻게 배우고 성장하는가</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_1-1.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">밀레니얼은 어떻게 배우고 성장하는가</p><p class="info-txt">이상준</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="청년 도배사 이야기">
+                    <span class="img-area img-area2">
+                      <i class="mouseover-img mouseover2"><img src="./nationalLibrary/images/01.png" alt="mouseover-img"><em>청년 도배사 이야기</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_1-2.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">청년 도배사 이야기</p><p class="info-txt">배윤슬</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="결국 Z세대가 세상을 지배한다">
+                    <span class="img-area img-area3">
+                      <i class="mouseover-img mouseover3"><img src="./nationalLibrary/images/01.png" alt="mouseover-img"><em>결국 Z세대가 세상을 지배한다</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_1-3.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">결국 Z세대가 세상을 지배한다</p><p class="info-txt">김용섭</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="내가 원하는 것은 나도 모를 때">
+                    <span class="img-area img-area4">
+                      <i class="mouseover-img mouseover4"><img src="./nationalLibrary/images/01.png" alt="mouseover-img"><em>내가 원하는 것은 나도 모를 때</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_1-4.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">내가 원하는 것은 나도 모를 때</p><p class="info-txt">정승환</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="풍덩!">
+                    <span class="img-area img-area5">
+                      <i class="mouseover-img mouseover5"><img src="./nationalLibrary/images/01.png" alt="mouseover-img"><em>풍덩!</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_1-5.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">풍덩!</p><p class="info-txt">우지현</p></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="bookNew" class="book-contents">
+              <ul class="contents-list">
+                <li class="content-item">
+                  <a href="#none" title="(가슴이 뻥 뚫리는)사이다 유머">
+                    <span class="img-area img-area1">
+                      <i class="mouseover-img mouseover1"><img src="./nationalLibrary/images/02.png" alt="mouseover-img"><em>(가슴이 뻥 뚫리는)사이다 유머</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_2-1.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">(가슴이 뻥 뚫리는)사이다 유머</p><p class="info-txt">Fun 유머연구회 엮음</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="(상상을 더해 만드는 나만의)아두이노 통신 프로젝트">
+                    <span class="img-area img-area2">
+                      <i class="mouseover-img mouseover2"><img src="./nationalLibrary/images/02.png" alt="mouseover-img"><em>(상상을 더해 만드는 나만의)아두이노 통신 프로젝트</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_2-2.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">(상상을 더해 만드는 나만의)아두이노 통신 프로젝트</p><p class="info-txt">우지윤 저</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="언어가 삶이 될 때:낯선 세계를 용기 있게 여행하는">
+                    <span class="img-area img-area3">
+                      <i class="mouseover-img mouseover3"><img src="./nationalLibrary/images/02.png" alt="mouseover-img"><em>언어가 삶이 될 때:낯선 세계를 용기 있게 여행하는</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_2-3.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">언어가 삶이 될 때:낯선 세계를 용기 있게 여행하는</p><p class="info-txt">지은이:김미소</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="한·중·일 전통 무예 컬러링북 : 하늘을 날아오르는 몸짓의 물결. 권법(拳法) 篇">
+                    <span class="img-area img-area4">
+                      <i class="mouseover-img mouseover4"><img src="./nationalLibrary/images/02.png" alt="mouseover-img"><em>한·중·일 전통 무예 컬러링북 : 하늘을 날아오르는 몸짓의 물결. 권법(拳法) 篇</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_2-4.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">한·중·일 전통 무예 컬러링북 : 하늘을 날아오르는 몸짓의 물결. 권법(拳法) 篇</p><p class="info-txt">권석무 編</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="성경의 기본 계시">
+                    <span class="img-area img-area5">
+                      <i class="mouseover-img mouseover5"><img src="./nationalLibrary/images/02.png" alt="mouseover-img"><em>성경의 기본 계시</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_2-5.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">성경의 기본 계시</p><p class="info-txt">저자: 위트니스 리 ;역자: 한국복음서원 편집부</p></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="bookRead" class="book-contents">
+              <ul class="contents-list">
+                <li class="content-item">
+                  <a href="#none" title="이해총서-한국 영화 역사">
+                    <span class="img-area img-area1">
+                      <i class="mouseover-img mouseover1"><img src="./nationalLibrary/images/03.png" alt="mouseover-img"><em>이해총서-한국 영화 역사</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_3-1.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">이해총서-한국 영화 역사</p><p class="info-txt">김미현</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="이해총서-한 단어 프레젠테이션">
+                    <span class="img-area img-area2">
+                      <i class="mouseover-img mouseover2"><img src="./nationalLibrary/images/03.png" alt="mouseover-img"><em>이해총서-한 단어 프레젠테이션</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_3-2.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">이해총서-한 단어 프레젠테이션</p><p class="info-txt">정상수</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="이해총서-팬덤 문화">
+                    <span class="img-area img-area3">
+                      <i class="mouseover-img mouseover3"><img src="./nationalLibrary/images/03.png" alt="mouseover-img"><em>이해총서-팬덤 문화</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_3-3.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">이해총서-팬덤 문화</p><p class="info-txt">홍종윤</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="이해총서-파워 콘텐츠 공식">
+                    <span class="img-area img-area4">
+                      <i class="mouseover-img mouseover4"><img src="./nationalLibrary/images/03.png" alt="mouseover-img"><em>이해총서-파워 콘텐츠 공식</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_3-4.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">이해총서-파워 콘텐츠 공식</p><p class="info-txt">양성희</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="이해총서-토론">
+                    <span class="img-area img-area5">
+                      <i class="mouseover-img mouseover5"><img src="./nationalLibrary/images/03.png" alt="mouseover-img"><em>이해총서-토론</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_3-5.jpg" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">이해총서-토론</p><p class="info-txt">백미숙</p></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="bookWebdb" class="book-contents">
+              <ul class="contents-list">
+                <li class="content-item">
+                  <a href="#none" title="정치,법률,정책,국제관계 분야 데이터베이스">
+                    <span class="img-area img-area1">
+                      <i class="mouseover-img mouseover1"><img src="./nationalLibrary/images/04.png" alt="mouseover-img"><em>정치,법률,정책,국제관계 분야 데이터베이스</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_4-1.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">정치,법률,정책,국제관계 분야 데이터베이스</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="경영/경제 분야 학술지 데이터베이스">
+                    <span class="img-area img-area2">
+                      <i class="mouseover-img mouseover2"><img src="./nationalLibrary/images/04.png" alt="mouseover-img"><em>경영/경제 분야 학술지 데이터베이스</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_4-2.JPG" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">경영/경제 분야 학술지 데이터베이스</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="문헌정보학 분야 학술지 및 참고도서 원문 데이터베이스">
+                    <span class="img-area img-area3">
+                      <i class="mouseover-img mouseover3"><img src="./nationalLibrary/images/04.png" alt="mouseover-img"><em>문헌정보학 분야 학술지 및 참고도서 원문 데이터베이스</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_4-3.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">문헌정보학 분야 학술지 및 참고도서 원문 데이터베이스</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="전세계 100개국 이상 60개 이상의 언어로 된 신문과">
+                    <span class="img-area img-area4">
+                      <i class="mouseover-img mouseover4"><img src="./nationalLibrary/images/04.png" alt="mouseover-img"><em>전세계 100개국 이상 60개 이상의 언어로 된 신문과</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_4-4.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">전세계 100개국 이상 60개 이상의 언어로 된 신문과</p></span>
+                  </a>
+                </li>
+                <li class="content-item">
+                  <a href="#none" title="국내 학술지 약2,000여 종의 원문 제공">
+                    <span class="img-area img-area5">
+                      <i class="mouseover-img mouseover5"><img src="./nationalLibrary/images/04.png" alt="mouseover-img"><em>국내 학술지 약2,000여 종의 원문 제공</em></i>
+                      <p class="img"><img src="./nationalLibrary/images/main_book_4-5.png" alt="book-img"></p>
+                    </span>
+                    <span class="info-area"><p class="info-tit">국내 학술지 약2,000여 종의 원문 제공</p></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section6">
+        <div class="main-inform-wrap">
+          <div class="main-notice-wrap">
+            <ul class="notice-list">
+              <li class="notice-item notice1 on"><a href="#none" title="공지사항">공지사항</a></li>
+              <li class="notice-item notice2"><a href="#none" title="행사안내">행사안내</a></li>
+              <li class="notice-item notice3"><a href="#none" title="인재채용">인재채용</a></li>
+            </ul>
+
+            <div class="notice-box">
+
+              <div id="noticeTab1" class="notice-tab">
+                <ul class="notice-tab-list">
+                  <li class="notice-tab-item top-item">
+                    <a href="#none">
+                      <p class="top-notice"><span class="notice-tit">공지</span>사회적 거리두기 의무화 조치 해제에 따른 도서관 이용 안내</p><span class="notice-date">2022-04-15</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">[1인 미디어 아카데미] 중장년 크리에이터 양성(기초) 과정 교육생 모집 안내</p><span class="notice-date">2022-05-30</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">[1인 미디어 아카데미] 중장년 크리에이터 특강 교육생 모집 안내</p><span class="notice-date">2022-05-16</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">「실감나게 챌린지」 이벤트 당첨자 발표</p><span class="notice-date">2022-05-04</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">[1인 미디어 아카데미] 중장년 크리에이터 양성(입문) 과정 교육생 모집 안내</p><span class="notice-date">2022-04-18</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">[1인 미디어 아카데미] 북튜버 양성(입문) 과정 교육생 모집 안내</p><span class="notice-date">2022-04-18</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">2022 디지털 트렌드 교육생 모집 안내</p><span class="notice-date">2022-04-18</span></a>
+                  </li>
+                </ul>
+                <a href="#none" class="notice-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+
+              <div id="noticeTab2" class="notice-tab">
+                <ul class="notice-tab-list">
+                  <li class="notice-tab-item top-item">
+                    <a href="#none">
+                      <p class="top-notice"><span class="notice-tit">공지</span>사회적 거리두기 의무화 조치 해제에 따른 도서관 이용 안내</p><span class="notice-date">2022-04-15</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">2022년 제1회 「저자와의 만남」 행사 안내 </p><span class="notice-date">2022-04-04</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">[이벤트] 국립중앙도서관 「실감나게 챌린지」이벤트</p><span class="notice-date">2022-03-15</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">「국립중앙도서관 디지털컬렉션 기획자가 되다!」 이벤트 당선자 발표</p><span class="notice-date">2022-01-19</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">「실감서재」 가족 방문 인증 이벤트 당첨자 발표</p><span class="notice-date">2021-12-28</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">「국립중앙도서관 디지털컬렉션 기획자가 되다!」 이벤트</p><span class="notice-date">2021-12-06</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">2021 링크드 오픈 데이터 콘퍼런스(LODAC) 개최 및 유튜브 생방송</p><span class="notice-date">2021-12-06</span></a>
+                  </li>
+                </ul>
+                <a href="#none" class="notice-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+
+              <div id="noticeTab3" class="notice-tab">
+                <ul class="notice-tab-list">
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">국립중앙도서관 대체인력(한시임기제) 채용 공고</p><span class="notice-date">2022-05-26</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt"> 국립중앙도서관 기간제 근로자 채용 공고</p><span class="notice-date">2022-05-20</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">2022년도 사서직 공무원 경력경쟁채용시험 시행계획 공고</p><span class="notice-date">2022-05-06</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">국립중앙도서관 공무직 근로자 채용 최종합격자 공고</p><span class="notice-date">2022-05-03</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">국립중앙도서관 대체인력(한시임기제) 최종합격자 공고</p><span class="notice-date">2022-04-29</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">국립중앙도서관 기간제 근로자 채용 최종 합격자 공고</p><span class="notice-date">2022-04-26</span></a>
+                  </li>
+                  <li class="notice-tab-item">
+                    <a href="#none">
+                      <p class="notice-txt">국립중앙도서관 공무직 근로자 채용 서류전형 합격자 공고</p><span class="notice-date">2022-04-22</span></a>
+                  </li>
+                </ul>
+                <a href="#none" class="notice-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main-news-wrap">
+            <ul class="news-list">
+              <li class="news-item news1 on"><a href="#none" title="포토뉴스">포토뉴스</a></li>
+              <li class="news-item news2"><a href="#none" title="카드뉴스">카드뉴스</a></li>
+              <li class="news-item news3"><a href="#none" title="보도자료">보도자료</a></li>
+              <li class="news-item news4"><a href="#none" title="영상뉴스">영상뉴스</a></li>
+            </ul>
+          
+
+            <div class="news-box">
+  
+              <div id="newsTab1" class="news-tab">
+                <ul class="news-tab-list">
+                  <li class="news-tab-item news-tab-item1">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">2022.05.26_국립중앙도서관-세종학당재단 업무협약</div>
+                      <div class="news-date">2022-05-26</div>
+                    </a>
+                  </li>
+                  <li class="news-tab-item news-tab-item2">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">꽃으로 만나는 근현대시 展, '그대, 내게 꽃이 되어' 전경(~22.07.03)</div>
+                      <div class="news-date">2022-05-06</div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#none" class="news-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+  
+              <div id="newsTab2" class="news-tab">
+                <ul class="news-tab-list">
+                  <li class="news-tab-item news-tab-item3">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">국립중앙도서관 본문검색 시범 서비스 오픈</div>
+                      <div class="news-date">2022-03-25</div>
+                    </a>
+                  </li>
+                  <li class="news-tab-item news-tab-item4">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">'지식의 길'을 거닐며 문학의 정취에 흠뻑 취하다</div>
+                      <div class="news-date">2022-03-18</div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#none" class="news-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+  
+              <div id="newsTab3" class="news-tab">
+                <ul class="news-tab-list">
+                  <li class="news-tab-item news-tab-item5">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">국가의 지식문화유산으로서 온라인 자료 수집 방안 모색</div>
+                      <div class="news-date">2022-05-30</div>
+                    </a>
+                  </li>
+                  <li class="news-tab-item news-tab-item6">
+                    <a href="#none">
+                      <div class="thumb"></div>
+                      <div class="news-txt">전 세계 세종학당에서 국립중앙도서관을 이용하다</div>
+                      <div class="news-date">2022-05-26</div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#none" class="news-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+  
+              <div id="newsTab4" class="news-tab">
+                <ul class="news-tab-list">
+                  <li class="news-tab-item news-tab-item7">
+                    <a href="#none" target="_blank">
+                      <div class="thumb"></div>
+                      <div class="news-txt">꽃으로 만나는 근현대시 展 「그대, 내게 꽃이 되어」 개막 홍보영상</div>
+                      <div class="news-date">2022-05-02</div>
+                    </a>
+                  </li>
+                  <li class="news-tab-item news-tab-item8">
+                    <a href="#none" target="_blank">
+                      <div class="thumb"></div>
+                      <div class="news-txt">[2022년 4월] 국립중앙도서관 사서추천도서</div>
+                      <div class="news-date">2022-04-21</div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#none" class="news-more-btn"><img src="./nationalLibrary/images/이미지24.png" alt="더보기"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section7">
+        <div class="banner-wrap">
+
+          <div class="main-promotion">
+            <ul class="promotion-list">
+              <li class="promotion-item">
+                <a href="#none"><img src="./nationalLibrary/images/이미지74.png" alt="banner"></a>
+              </li>
+              <li class="promotion-item">
+                <a href="#none"><img src="./nationalLibrary/images/이미지76.png" alt="banner"></a>
+              </li>
+              <li class="promotion-item">
+                <a href="#none"><img src="./nationalLibrary/images/이미지78.png" alt="banner"></a>
+              </li>
+              <li class="promotion-item">
+                <a href="#none"><img src="./nationalLibrary/images/이미지79.png" alt="banner"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="site-promotion">
+
+            <div class="promotion-slide-container">
+              <div class="promotion-slide-view">
+                <ul class="promotion-slide-wrap">
+                  <li class="promotion-slide promotion-slide3">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지84.png" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide4">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지85.jpg" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide1">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지82.jpg" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide2">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지83.png" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide3">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지84.png" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide4">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지85.jpg" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide1">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지82.jpg" alt="site"></a>
+                  </li>
+                  <li class="promotion-slide promotion-slide2">
+                    <a href="#none"><img src="./nationalLibrary/images/이미지83.png" alt="site"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="slide-btn-wrap">
+              <button class="promotion-prev-btn"><img src="./nationalLibrary/images/btn01.png" alt="이전"></button>
+              <button class="promotion-next-btn"><img src="./nationalLibrary/images/btn02.png" alt="다음"></button>
+              <div class="promotion-toggle-btn">
+                <button class="promotion-stop-btn"><img src="./nationalLibrary/images/btn03.png" alt="일시정지"></button>
+                <button class="promotion-start-btn"><img src="./nationalLibrary/images/btn04.png" alt="재생"></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+    
+    <footer id="footer">
+      <div class="top">
+        <div class="footer-top-inner">
+          <ul class="util-list">
+            <il class="util-item"><a href="http://help.nl.go.kr/" target="_blank" title="원격헬프데스크">원격헬프데스크</a></il>
+            <il class="util-item"><a href="https://www.epeople.go.kr/index.jsp" title="국민신문고">국민신문고</a></il>
+            <il class="util-item"><a href="https://www.nl.go.kr/NL/contents/N70800000000.do" title="클린신고센터">클린신고센터</a></il>
+            <il class="util-item"><a href="https://www.nl.go.kr/NL/contents/N50108000000.do" title="찾아오시는 길">찾아오시는 길</a></il>
+            <il class="util-item"><a href="https://www.nl.go.kr/NL/contents/N71100000000.do" title="사이트맵">사이트맵</a></il>
+            <il class="util-item"><a href="https://www.nl.go.kr/NL/contents/N71210000000.do" title="누리집이용가이드">누리집이용가이드</a></il>
+            <il class="util-item"><a href="https://www.nl.go.kr/NL/contents/N71300000000.do" title="뷰어프로그램안내">뷰어프로그램 안내</a></il>
+          </ul>
+          <div class="sns-list">
+            <a href="https://www.instagram.com/nationallibraryofkorea/" target="_blank" class="sns-item" title="새창 열림"><img src="./nationalLibrary/images/이미지-로고05.png" alt="sns"></a>
+            <a href="http://blog.naver.com/dibrary1004" target="_blank" class="sns-item"  title="새창 열림"><img src="./nationalLibrary/images/이미지-로고04.png" alt="sns"></a>
+            <a href="https://ko-kr.facebook.com/national.library.of.korea" target="_blank" class="sns-item"  title="새창 열림"><img src="./nationalLibrary/images/이미지-로고03.png" alt="sns"></a>
+            <a href="https://twitter.com/library1004" target="_blank" class="sns-item"  title="새창 열림"><img src="./nationalLibrary/images/이미지-로고02.png" alt="sns"></a>
+            <a href="https://www.youtube.com/channel/UCKjWKI1yRlzWfgnF98HZ_TA" target="_blank" class="sns-item"  title="새창 열림"><img src="./nationalLibrary/images/이미지-로고01.png" alt="sns"></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="footer-bottom-inner">
+          <div class="inner-top">
+
+            <div class="policy-wrap">
+              <ul class="policy-list">
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N70100000000.do">개인정보처리방침</a></li>
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N70200000000.do">국립중앙도서관 윤리강령</a></li>
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N70300000000.do">도서관법령</a></li>
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N70400000000.do">이용봉사헌장</a></li>
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N50803010000.do">사전정보공개</a></li>
+                <li class="policy-item"><a href="https://www.nl.go.kr/NL/contents/N70600000000.do">저작권정책</a></li>
+              </ul>
+            </div>
+
+            <div class="family-wrap">
+              <label for="family-site">유관사이트</label>
+              <select name="유관사이트" id="familySite" class="family-select-wrap">
+                <option value class="opt-tit">유관사이트</option>
+                <option value="https://www.nlcy.go.kr">국립어린이청소년도서관</option>
+                <option value="https://sejong.nl.go.kr">국립세종도서관</option>
+                <option value="http://www.nld.go.kr">국립장애인도서관</option>
+                <option value="https://www.data.go.kr">공공데이터포털</option>
+                <option value="http://www.acrc.go.kr">국민권익위원회</option>
+                <option value="http://www.gov.kr/portal/main">정부24</option>
+                <option value="http://mcst.go.kr">문화체육관광부</option>
+                <option value="http://www.kpf.or.kr">한국언론진흥재단</option>
+                <option value="http://www.museum.go.kr/uigwe/">외규장각 의궤</option>
+                <option value="http://www.nanet.go.kr">국회도서관</option>
+                <option value="http://www.clip.go.kr">도서관정보정책위원회</option>
+                <option value="http://library.scourt.go.kr">법원도서관</option>
+                <option value="http://www.kpec.or.kr">간행물윤리위원회</option>
+                <option value="http://www.kla.kr">한국도서관협회</option>
+                <option value="https://www.kolaa.kr">한국문학예술저작권협회</option>
+                <option value="http://www.libsta.go.kr">국가도서관통계시스템</option>
+                <option value="http://www.kpla.kr">(사)공공도서관협의회</option>
+              </select>
+              <button id="familySiteBtn" class="family-site-btn" title="새창 열기">이동</button>
+            </div>
+            
+          </div>
+
+          <div class="info-wrap">
+            <span class="footer-logo"><img src="./nationalLibrary/images/footer-logo.png" alt="logo"></span>
+            <ul class="contact-list">
+              <li class="contact-item">우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</li>
+              <li class="contact-item">문의전화 02-590-0500 팩스 02-590-0530</li>
+              <li class="contact-item">Copyright© National Library of Korea. All rights reserved.</li>
+            </ul>
+            <div class="certificate-list">
+              <a href="#none" class="certificate-item" title="WA품질인증마크 한국웹접근성평가센터 홈페이지로 이동(새창)"><img src="./nationalLibrary/images/이미지97.png" alt="WA품질인증마크 한국웹접근성평가센터"></a>
+              <a href="http://www.kogl.or.kr/" target="_blank" class="certificate-item" title="공공누리|공공저작물 자유이용허락 홈페이지로 이동(새창)"><img src="./nationalLibrary/images/이미지98.jpg" alt="공공누리|공공저작물 자유이용허락"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <div id="fixedBtnWrap">
+      <a href="./index.html" class="fixed-btn">위로</a>
+    </div>
+
+  </div>
+
+  <script src="./script/national_library.js"></script>
+  
+</body>
+</html>
