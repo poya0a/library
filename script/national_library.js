@@ -35,11 +35,12 @@
         let obj = [];
         let found = '';
       
+        if(document.cookie==='') return;
         tem = document.cookie.split(';'); 
         tem.map(function(item, idx){
           obj[idx] = {
-              name: item.split('=')[0].trim(), 
-              value: item.split('=')[1].trim() 
+            name: item.split('=')[0].trim(), 
+            value: item.split('=')[1].trim() 
           }
         });
       
